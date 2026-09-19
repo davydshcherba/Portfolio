@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Davyd Shcherba — Python Backend Developer</title>
+<meta name="description" content="Davyd Shcherba — backend developer from Lviv, Ukraine. Python, FastAPI, PostgreSQL, Docker.">
+<meta name="author" content="Davyd Shcherba">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Davyd Shcherba — Python Backend Developer">
+<meta property="og:description" content="Backend developer from Lviv, Ukraine. Python, FastAPI, PostgreSQL, Docker.">
+<meta name="twitter:card" content="summary">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' font-family='monospace'>&#123;&#125;</text></svg>">
+<link rel="stylesheet" href="css/style.css">
+
+<noscript><style>.reveal{opacity:1;transform:none}.theme-toggle{display:none}</style></noscript>
+
+<script>
+/* Set the theme before first paint so there is no flash of the wrong colours. */
+(function () {
+  try {
+    var stored = localStorage.getItem('theme');
+    var light = stored ? stored === 'light'
+                       : window.matchMedia('(prefers-color-scheme: light)').matches;
+    document.documentElement.setAttribute('data-theme', light ? 'light' : 'dark');
+  } catch (e) {
+    document.documentElement.setAttribute('data-theme', 'dark');
+  }
+})();
+</script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch colour theme">
+  <span class="theme-toggle__icon" aria-hidden="true"></span>
+</button>
+
+<div class="wrap">
+
+  <header class="hero" id="top">
+    <p class="hero__role">Python Backend Developer</p>
+    <h1 class="hero__name">Davyd<br>Shcherba</h1>
+    <p class="hero__tagline">I build backends that stay simple under load — Python, FastAPI, PostgreSQL, Docker.</p>
+
+    <ul class="hero__meta">
+      <li><span class="key">location</span><span class="val">Lviv, Ukraine</span></li>
+      <li><span class="key">coding since</span><span class="val">2022 (age 11)</span></li>
+      <li><span class="key">status</span><span class="val status"><i class="dot" aria-hidden="true"></i>Open to work</span></li>
+    </ul>
+
+    <nav class="hero__links" aria-label="Primary">
+      <a href="mailto:davidserba302@gmail.com">Email</a>
+      <a href="https://github.com/davydshcherba" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://t.me/de1ndel" target="_blank" rel="noopener">Telegram</a>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <section class="section reveal" id="about" aria-labelledby="about-h">
+      <p class="section__label"><span>01</span> About</p>
+      <h2 class="section__title" id="about-h">About</h2>
+      <div class="prose">
+        <p>I grew up watching my father work at his computer, and that curiosity turned into code when I was eleven. My first money came from selling stickers at school — the instinct to ship something people actually want has stuck around since.</p>
+        <p>Today I work mostly on the backend: async Python with FastAPI, PostgreSQL through SQLAlchemy, everything packaged in Docker so it runs the same way anywhere. I care about the unglamorous parts — clear schemas, honest error codes, CI that fails loudly before anyone else sees a bug.</p>
+        <p>I also handle the frontend when a project needs one, using React, Next.js and TypeScript. Away from the keyboard I follow motorsport — Formula 1 above all, where the engineering matters as much as the driving.</p>
+      </div>
+    </section>
+
+    <section class="section reveal" id="skills" aria-labelledby="skills-h">
+      <p class="section__label"><span>02</span> Skills</p>
+      <h2 class="section__title" id="skills-h">Skills</h2>
+
+      <div class="skills">
+        <div class="skills__group">
+          <h3>Backend</h3>
+          <ul class="tags">
+            <li>Python</li><li>FastAPI</li><li>SQLAlchemy</li><li>PostgreSQL</li><li>asyncpg</li><li>Alembic</li><li>REST APIs</li>
+          </ul>
+        </div>
+        <div class="skills__group">
+          <h3>Frontend</h3>
+          <ul class="tags">
+            <li>TypeScript</li><li>React</li><li>Next.js</li><li>JavaScript</li><li>HTML</li><li>CSS</li>
+          </ul>
+        </div>
+        <div class="skills__group">
+          <h3>Tools</h3>
+          <ul class="tags">
+            <li>Docker</li><li>Docker Compose</li><li>Git</li><li>GitHub Actions</li><li>uv</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal" id="projects" aria-labelledby="projects-h">
+      <p class="section__label"><span>03</span> Projects</p>
+      <h2 class="section__title" id="projects-h">Projects</h2>
+
+      <article class="project">
+        <header class="project__head">
+          <h3 class="project__name">Tally</h3>
+          <span class="project__year">2026</span>
+        </header>
+        <p class="project__desc">A fast, self-hosted URL shortener with built-in click analytics. Shortens any link to a random 7-character code or a custom alias, tracks total and unique clicks per link, and supports optional expiry — expired links stop redirecting and answer <code>410 Gone</code>.</p>
+        <p class="project__role"><span class="key">Built</span> the whole service: async FastAPI app, PostgreSQL schema and migrations, API-key-protected admin endpoints, and a Docker Compose setup that brings the database, migrations and API up with a single command. CI runs on every push.</p>
+        <ul class="tags tags--sm">
+          <li>Python</li><li>FastAPI</li><li>SQLAlchemy 2.0</li><li>PostgreSQL 16</li><li>asyncpg</li><li>Docker</li><li>uv</li>
+        </ul>
+        <p class="project__links">
+          <a href="https://github.com/davydshcherba/Tally" target="_blank" rel="noopener">Source<span aria-hidden="true">&#8599;</span></a>
+        </p>
+      </article>
+
+      <article class="project">
+        <header class="project__head">
+          <h3 class="project__name">To-Do CLI</h3>
+          <span class="project__year">2026</span>
+        </header>
+        <p class="project__desc">An interactive command-line task manager. Add, list, complete and remove tasks from a prompt; everything is stored as JSON under <code>~/.todo-cli</code>, so the list follows you between projects and survives reinstalls.</p>
+        <p class="project__role"><span class="key">Built</span> it with zero third-party dependencies &mdash; the standard library only. Commands live in their own modules behind a small dispatcher, and a custom <code>@logger</code> decorator wraps every action to append it to a per-day JSON log. Keyword-only arguments and defensive loading keep a hand-edited tasks file from crashing the app.</p>
+        <ul class="tags tags--sm">
+          <li>Python 3.12</li><li>Standard library only</li><li>Decorators</li><li>JSON storage</li><li>pathlib</li><li>uv</li>
+        </ul>
+        <p class="project__links">
+          <a href="https://github.com/davydshcherba/To-Do-CLI" target="_blank" rel="noopener">Source<span aria-hidden="true">&#8599;</span></a>
+        </p>
+      </article>
+
+    </section>
+
+    <section class="section reveal" id="education" aria-labelledby="education-h">
+      <p class="section__label"><span>04</span> Education</p>
+      <h2 class="section__title" id="education-h">Education</h2>
+
+      <ol class="timeline">
+        <li class="timeline__item">
+          <p class="timeline__where">Lviv College of Information Technology</p>
+          <p class="timeline__what">Information technology</p>
+        </li>
+        <li class="timeline__item">
+          <p class="timeline__where">Busk Gymnasium</p>
+          <p class="timeline__what">General secondary education</p>
+        </li>
+      </ol>
+    </section>
+
+    <section class="section reveal" id="contact" aria-labelledby="contact-h">
+      <p class="section__label"><span>05</span> Contact</p>
+      <h2 class="section__title" id="contact-h">Get in touch</h2>
+      <p class="prose">Open to backend work, internships and interesting side projects. The fastest way to reach me is email or Telegram.</p>
+
+      <ul class="contacts">
+        <li>
+          <span class="key">Email</span>
+          <a href="mailto:davidserba302@gmail.com">davidserba302@gmail.com<span aria-hidden="true">&#8599;</span></a>
+        </li>
+        <li>
+          <span class="key">GitHub</span>
+          <a href="https://github.com/davydshcherba" target="_blank" rel="noopener">@davydshcherba<span aria-hidden="true">&#8599;</span></a>
+        </li>
+        <li>
+          <span class="key">Telegram</span>
+          <a href="https://t.me/de1ndel" target="_blank" rel="noopener">@de1ndel<span aria-hidden="true">&#8599;</span></a>
+        </li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>Davyd Shcherba &middot; Lviv, Ukraine</p>
+    <a href="#top" class="footer__top">Back to top</a>
+  </footer>
+
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
