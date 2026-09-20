@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>og:image card — 1200×630</title>
+<!--
+  Source for assets/img/og.png, the social preview card.
+  Open this file, screenshot the 1200x630 box, save it as assets/img/og.png.
+  Headless Chrome does it in one line:
+    chrome --headless --screenshot=assets/img/og.png --window-size=1200,630 assets/og-card.html
+-->
+<style>
+  :root {
+    --bg:        #0c0c0d;
+    --bg-raised: #121214;
+    --line:      #232327;
+    --text:      #ededef;
+    --muted:     #8a8a93;
+    --accent:    #4ade80;
+    --mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+    --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, Helvetica, Arial, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; background: #17171a; }
+  .card {
+    width: 1200px;
+    height: 630px;
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--sans);
+    padding: 84px 96px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+  }
+  .card::after {
+    content: "";
+    position: absolute;
+    inset: 0 0 auto 0;
+    height: 4px;
+    background: var(--accent);
+  }
+  .role {
+    font-family: var(--mono);
+    font-size: 24px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0;
+  }
+  .name {
+    font-size: 108px;
+    line-height: 1.02;
+    letter-spacing: -0.03em;
+    font-weight: 600;
+    margin: 28px 0 0;
+  }
+  .tagline {
+    font-size: 30px;
+    line-height: 1.45;
+    color: var(--muted);
+    margin: 28px 0 0;
+    max-width: 22ch;
+  }
+  .meta {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    font-family: var(--mono);
+    font-size: 24px;
+    color: var(--muted);
+    border-top: 1px solid var(--line);
+    padding-top: 28px;
+    margin: 0;
+  }
+  .meta b { color: var(--text); font-weight: 500; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div>
+      <p class="role">Python Backend Developer</p>
+      <h1 class="name">Davyd Shcherba</h1>
+      <p class="tagline">Clean async APIs — FastAPI, PostgreSQL, Docker, CI.</p>
+    </div>
+    <p class="meta">
+      <span><b>github.com/davydshcherba</b></span>
+      <span>Lviv, Ukraine</span>
+    </p>
+  </div>
+</body>
+</html>
