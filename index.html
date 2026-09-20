@@ -103,6 +103,21 @@
 
       <article class="project">
         <header class="project__head">
+          <h3 class="project__name">Vision</h3>
+          <span class="project__year">2026</span>
+        </header>
+        <p class="project__desc">A student task dashboard: assignments with a title, description, due date, status and attached files, laid out on a three-column kanban board. Files open in the page &mdash; PDFs in the browser's viewer, images as they are, text in monospace &mdash; so nothing has to be downloaded just to be read. The interface switches between Ukrainian and English, and API error messages follow the choice through <code>Accept-Language</code>.</p>
+        <p class="project__role"><span class="key">Built</span> both sides. Backend: async FastAPI split by layer &mdash; routers do HTTP only, logic and file handling live apart &mdash; with SQLAlchemy 2, Alembic migrations that run on start, per-file and per-task upload limits, and a batch upload that saves the good files and reports each bad one with a reason. Frontend: Next.js 15 and React 19 in TypeScript, drag &amp; drop between columns, size checks before sending and real upload progress over XHR. The whole stack &mdash; Postgres, API, frontend, Adminer &mdash; comes up with one <code>docker compose up</code>.</p>
+        <ul class="tags tags--sm">
+          <li>Python</li><li>FastAPI</li><li>SQLAlchemy 2</li><li>Alembic</li><li>PostgreSQL 16</li><li>TypeScript</li><li>Next.js 15</li><li>React 19</li><li>Docker Compose</li><li>uv</li><li>bun</li>
+        </ul>
+        <p class="project__links">
+          <a href="https://github.com/davydshcherba/Vision" target="_blank" rel="noopener">Source<span aria-hidden="true">&#8599;</span></a>
+        </p>
+      </article>
+
+      <article class="project">
+        <header class="project__head">
           <h3 class="project__name">Tally</h3>
           <span class="project__year">2026</span>
         </header>
